@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 from nose.plugins import Plugin
 from blessings import Terminal
 
@@ -46,4 +48,4 @@ green for successfull tests")
 
     def print_to_screen(self, what):
         # Separated for testability
-        print what,
+        print(what, end=' ')
